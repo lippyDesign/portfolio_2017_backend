@@ -1,6 +1,6 @@
 const sendgrid = require('sendgrid');
 const helper = sendgrid.mail;
-const { sendGridKey, listOfRecipients } = require('./keys');
+const { sendGridKey, listOfRecipients } = require('./keys'); // listOfRecipients [{ email: example@example.com }, { email: example2@example.com }]
 
 class Mailer extends helper.Mail {
   constructor({ from_email, from_name, message }, content) {
